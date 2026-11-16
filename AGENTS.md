@@ -6,7 +6,7 @@ This repository uses the Agent Delivery Playbook. Apply it to the user's actual 
 
 1. Read [PROJECT.md](PROJECT.md) for project facts, commands, owners, and delivery effects.
 2. Read [tasks/handoff.md](tasks/handoff.md) and the selected task's canonical record. Read the [roadmap](tasks/roadmap.md) when selecting work and relevant [findings](tasks/findings.md) when assessing readiness.
-3. Follow [session start](docs/session-start.md), [the operating method](docs/operating-method.md), and [review rules](docs/review-protocol.md) as applicable. Inspect instructions nearer to files you will change.
+3. Follow [session start](docs/session-start.md), [the operating method](docs/operating-method.md), [review rules](docs/review-protocol.md), and [model selection](docs/model-selection.md) for role assignments. Inspect instructions nearer to files you will change.
 4. Check the working tree, branch, actual source revision, and available review evidence before editing. Read historical logs only when they are needed to resolve current work.
 
 ## Working rules
@@ -17,6 +17,7 @@ This repository uses the Agent Delivery Playbook. Apply it to the user's actual 
 - Use one writer per path and one executor per shared mutable resource. Claim work through the configured coordination method; preserve other people's changes. A local branch or issue assignment is not a technical lock.
 - Make the smallest coherent change that achieves the outcome. Validate meaningful behavior and risk; do not add ceremonial tests or widen scope to fix unrelated findings.
 - Use the required independent reviewers. A self-check is never independent review. Record unavailable capabilities and unperformed checks honestly.
+- Choose models and reasoning effort within the configured profile and limits. Distinguish preferences from requirements, record requested and runtime-reported settings separately, and never claim that a role prompt switched models.
 - Keep credentials, personal data, private incident details, sensitive logs, and execution artifacts out of public records. Use authorized restricted storage when needed.
 - Prepare concrete changes and evidence before asking for a decision. Continue independent authorized work when another part is blocked. Ask only for missing decisions that affect the next action.
 - On completion, interruption, or pause, record the verified position, current permission, ownership, and exact next action. Do not start an unselected task unless a bounded batch was authorized.

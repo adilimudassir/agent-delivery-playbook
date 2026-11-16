@@ -31,9 +31,13 @@ Keep the opening report brief:
 
 On resumption, verify that referenced evidence remains accessible and sufficiently fresh for the next action. Reconcile the previous executor before taking over. Read history only when needed to resolve a discrepancy or understand a decision.
 
+Check the selected model profile and the next role's capability requirements. Reuse valid choices within scope; record runtime limitations or changed settings without requesting the same authorization again.
+
 ## The implementation brief
 
 Explain the outcome, why it is selected, included/excluded scope, dependencies, review tier, planned checks, relevant findings, and intended delivery. Add risk, cost, target, downtime/window, recovery, and executor only where they matter. Record existing authorization and identify uncovered decisions explicitly.
+
+Include the required roles and their proposed capability/model/effort using [model selection](model-selection.md). Distinguish preferred settings from mandatory requirements and confirm which controls the runtime exposes. Use only the roles required by the task; humans need no model settings.
 
 The brief may be a small task file or a canonical issue body. Do not duplicate it across both. For a new finding, give separate work its own ID when it can be independently selected. Prefer links to stable evidence over repeating large plans or logs.
 
@@ -46,6 +50,7 @@ Update the current handoff section in the canonical task after a meaningful chec
 - What is incomplete, uncertain, blocked, or awaiting a decision?
 - What permission remains valid, and what pause or limits apply?
 - Who owns the next action, which paths/resources are claimed, and has the former owner released them?
+- What capability or model requirement does the next role have, and is any runtime limitation or substitution unresolved?
 - What exactly should the next worker do after checking current state?
 
 Record actions that may still be running and uncertain external effects before a retry. Include uncommitted paths or a safe recovery location when work is not committed. Do not put secrets or sensitive artifacts in the handoff.

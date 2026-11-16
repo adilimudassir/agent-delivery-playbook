@@ -6,15 +6,19 @@ Use the GitHub **Use this template** action, choose the desired owner and visibi
 
 ## Existing repository
 
-1. Read the existing AGENTS.md, contributor rules, task tracker, and delivery automation. Preserve any active work and authorization.
-2. Add the playbook on an isolated branch. Merge relevant rules into the existing AGENTS.md and PROJECT.md; do not overwrite established instructions wholesale.
+1. Read the existing AGENTS.md, CLAUDE.md when present, contributor rules, task tracker, and delivery automation. Preserve any active work and authorization.
+2. Add the playbook on an isolated branch. Merge relevant rules into the existing AGENTS.md and PROJECT.md; do not overwrite established instructions wholesale. For Claude Code, merge the `@AGENTS.md` import from [CLAUDE.md](../CLAUDE.md) into the existing entrypoint or use the supplied thin entrypoint.
 3. Copy docs, templates, and task conventions into non-conflicting paths. Adjust relative links if the layout changes. Keep the existing project README and link to the method.
 4. Choose one canonical task store. Link or migrate existing tasks, retain historical IDs as aliases, and define unique IDs for independently executable checkpoints.
 5. Replace long current-progress narratives with short pointers to canonical task handoffs. Archive old records without reinterpreting historical approvals as current permission. Preserve important historical links.
-6. Review the actual delivery effects and configure appropriate review tiers. Policy changes themselves use high-tier review under the existing applicable rules.
+6. Review the actual delivery effects and configure appropriate review tiers. Set role capabilities, model preferences or requirements, permitted substitutes, and limits using [model selection](model-selection.md). Policy changes themselves use high-tier review under the existing applicable rules.
 7. Run one real task through selection, implementation, review, and handoff. Adjust fields that do not help the project while preserving clear authority and honest evidence.
 
 Adopt the smallest useful subset. Every project needs an entrypoint, local settings, a bounded task record, and a restartable handoff. Cross-task findings, decision records, and operational checkpoints become useful as complexity grows.
+
+## Codex and Claude setup
+
+Use the [Codex profile](../examples/model-profiles/codex.md) or [Claude / Claude Code profile](../examples/model-profiles/claude.md) for concrete role defaults and supported configuration examples. Record your selected profile, allowed substitutes, and limits in PROJECT.md, then apply the settings in the actual tool. Keep shared working rules in AGENTS.md and project facts in PROJECT.md. Confirm the instruction files and model/effort settings loaded before starting work; the task record must distinguish requested values from reported ones.
 
 ## GitHub placement
 
