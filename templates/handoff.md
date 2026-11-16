@@ -43,6 +43,8 @@ closed PR.
 - Working directory, uncommitted work, and files to preserve:
 - Running processes, pending jobs, or uncertain actions to reconcile:
 - Evidence or environment state that must be refreshed before continuing:
+- Next role's capability/model requirement, routing-record reference, and any unresolved substitution or runtime limitation:
+- Whether the next role requires a new independent run or a human reviewer:
 - Recovery or cleanup still due, its owner, and trigger:
 
 Use `none` only when checked and `unknown` when not established. A new session

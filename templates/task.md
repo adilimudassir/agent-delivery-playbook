@@ -68,6 +68,20 @@ session. Confirm the previous executor's state before takeover.
 
 ## Plan
 
+### Role and model plan
+
+Use only the roles this task needs, following [model selection](../docs/model-selection.md).
+For a small task, a concise note can replace this table. Humans use `not_applicable`.
+
+| Role / owner or run | Capability; preference or requirement | Requested model / effort | Reported model / effort; metadata source | Substitution or limitation |
+| --- | --- | --- | --- | --- |
+| Implementer; assign required reviewers separately | Task-appropriate capability | Record the selected configuration | `unverified` until exposed; assess each value separately | None recorded |
+
+Record the reason and bounded scope for escalation. A role prompt is not a model
+switch, and a model change does not establish review independence.
+
+### Work steps
+
 1. Prepare the bounded change and establish the relevant baseline.
 2. Implement and run the acceptance checks.
 3. Obtain the applicable review decision, complete authorized delivery, and
@@ -98,6 +112,7 @@ try to put a commit's own final hash inside that commit.
 - Authorization that remains valid; actions still awaiting a decision:
 - Workspace, branch, uncommitted changes, and active processes to preserve:
 - Claim retained, transferred, or released:
+- Next role's capability/model requirement; routing record and unresolved runtime limitations:
 
 Update this section on pause, interruption, transfer, and completion. Put a
 pointer in `tasks/handoff.md`; keep the detailed state here.

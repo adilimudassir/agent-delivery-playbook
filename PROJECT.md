@@ -54,8 +54,24 @@ Issue intake is a request. In Markdown mode, link the accepted issue to its cano
 - Project-wide pause: none by default. Record an actual global pause in this section with scope, authority, date, and resumption condition. Task-only pauses belong in the task record.
 - Enforcement: **not configured by these files**. Inspect and record actual repository rules, CI, access controls, and environment protections separately when relevant.
 
-## Optional capabilities
+## Model selection and capabilities
 
-Choose available tools and models by task complexity. Record the actual human or agent identities used for independent roles. Concrete model preferences may be added here, but a requested model or reasoning setting is `unverified` unless the runtime exposes it. A role prompt does not switch models.
+Follow [the model selection guide](docs/model-selection.md). Use its capability-based defaults until this project deliberately selects concrete models. The optional [Codex](examples/model-profiles/codex.md) and [Claude / Claude Code](examples/model-profiles/claude.md) profiles are examples to adopt or adapt, not required providers.
+
+| Setting | Starter policy |
+| --- | --- |
+| Selected profile | Generic role/capability guidance; no named-model profile selected |
+| Role preferences | Configure coordinator, implementer, collaborators when useful, technical reviewer, and final verifier when required |
+| Preference or requirement | Preferences unless a user instruction or project decision explicitly requires an exact model/capability |
+| Allowed models / providers | Those already exposed and authorized in the current tool; verify task suitability and data boundaries |
+| Permitted substitutes | Record acceptable alternatives when selecting a named profile; do not silently substitute for a requirement |
+| Reasoning effort | Select supported labels using the guide and the task's complexity; record requested and reported values separately |
+| Usage / time limits | Existing user/tool/project limits apply; define task-specific limits when needed, without assuming extra spending authority |
+| Selection control | Use available runtime controls; if unavailable, record the limitation and follow the guide's fallback rules |
+| Maximum-effort escalation | A concrete unresolved question after substantive investigation, expected benefit, and a bounded allowance within existing limits |
+
+Record actual human or agent identities for independent roles. Use `unverified` when a model or effort value is not exposed; record an unsupported control separately. A role prompt does not switch models. Routine choices within an authorized profile and limits do not require repeated permission.
+
+## Additional project context
 
 Add links to architecture, domain rules, service ownership, restricted evidence locations, and nested instructions only when the project needs them. Keep current task history out of this file.

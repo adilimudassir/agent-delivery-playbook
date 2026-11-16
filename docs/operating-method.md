@@ -57,6 +57,8 @@ A stale timestamp, absent heartbeat, or disappeared session is a reason to inves
 
 ## 5. Implement, validate, and review
 
+Use [the model selection guide](model-selection.md) to assign suitable capabilities and reasoning effort to the roles this task actually needs. Record the role plan, actual run identities, and observable settings in the task. Model changes preserve scope, ownership, and the required review independence.
+
 Keep changes coherent and within acceptance criteria. Preserve unrelated work and existing data. Record material decisions and findings with evidence. Escalate a critical issue immediately, stop affected unsafe steps, and continue independent authorized work. Use already-authorized containment or recovery when its conditions hold; broader action needs its own decision.
 
 Use checks that can expose the change's concrete failure modes. Report commands, results, source revision, environment, and limitations. Distinguish static checks, tests, builds, simulations, live observations, and recovery exercises. Do not report a planned or skipped check as completed.

@@ -22,6 +22,8 @@ Classify by effects, not file extension. A permission change in Markdown is high
 
 A new label, role prompt, or model name in one conversation is not a new independent review. An agent review should start with a fresh context packet rather than the implementation conversation. Give neutral requirements and evidence, without a suggested verdict. Different independent runs may use the same model. Record actual run/person identity and any unavailable controls.
 
+Select capable reviewers using [the model selection guide](model-selection.md) and the project's chosen profile. Record requested and reported model/effort separately. More reasoning or a stronger model does not replace the required independent run or human reviewer.
+
 If an independent role is unavailable, say so and retain the candidate as pending review. Continue useful authorized preparation. Do not claim a pass or lower the tier to bypass the gap. An explicit maintainer exception must state scope, reason, residual risk, and what remains unverified; it cannot override platform or host access restrictions.
 
 ## Review packet

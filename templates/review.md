@@ -14,7 +14,10 @@ template grants no authority to merge, publish, deploy, or change an environment
 | Reviewer | Person or agent / run identifier |
 | Recorded at | ISO 8601 timestamp with timezone |
 | Independence | Relationship to every implementation author; fresh review context |
-| Requested / reported runtime | Optional; use `unverified` when settings are not exposed |
+| Requested model / effort | Chosen profile settings, or `not_applicable` for a human |
+| Runtime-reported model | Actual value and metadata source, or `unverified` |
+| Runtime-reported effort | Actual value and metadata source, or `unverified`; assess separately from model |
+| Substitution / control limitation | Allowed alternative and reason, or `unsupported` control; do not silently replace a requirement |
 
 A self-check must be labelled as a self-check. It meets a light-tier review
 requirement only when the project explicitly allows that fallback. It does not
