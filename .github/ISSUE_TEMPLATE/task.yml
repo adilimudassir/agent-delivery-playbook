@@ -1,0 +1,74 @@
+name: Task request
+description: Propose a bounded outcome with scope, acceptance criteria, and dependencies.
+title: "Task: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form proposes work. Filing an issue does not authorize implementation,
+        merge, publication, deployment, access changes, or other external actions.
+        Follow PROJECT.md for the authoritative task store and review requirements.
+        Keep secrets and sensitive environment details out of public issues.
+  - type: input
+    id: canonical-record
+    attributes:
+      label: Task ID and canonical record
+      description: Link the existing task record, or state that this is a new proposal. The coordinator assigns a unique ID.
+      placeholder: "New proposal, or T-123 / tasks/items/T-123-title.md"
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Problem and intended outcome
+      description: Explain who is affected and the observable result this task should achieve.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and exclusions
+      description: Describe the included changes and relevant work that remains outside this task.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: State checkable outcomes. Distinguish repository delivery from live-service completion when relevant.
+      placeholder: |
+        - [ ] Observable result and how it can be verified
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and existing evidence
+      description: Link related tasks and findings. Distinguish a required prerequisite from a recommendation; use unknown when not established.
+    validations:
+      required: true
+  - type: dropdown
+    id: proposed-review-tier
+    attributes:
+      label: Proposed review tier
+      description: The coordinator confirms the tier from actual effects before implementation.
+      options:
+        - Needs assessment
+        - Light — bounded editorial change
+        - Standard — behavior change
+        - High — security, data, live systems, external impact, or governance
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Existing authorization and constraints
+      description: Reference any actual instruction and its scope, or write none recorded. Include pauses and actions requiring later decisions.
+      placeholder: None recorded; this is a proposal.
+    validations:
+      required: true
+  - type: textarea
+    id: execution-notes
+    attributes:
+      label: Ownership, recovery, and additional context
+      description: If relevant, identify proposed paths or shared resources, recovery needs, and cleanup. Do not claim ownership already held by another task.
