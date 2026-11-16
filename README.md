@@ -18,23 +18,16 @@ For a quick orientation, say **“Begin.”** For a recommendation and brief, sa
 
 ## The workflow
 
-```mermaid
-flowchart TD
-    A[Select and brief] --> B{Scope authorized?}
-    B -->|Yes| C[Implement and validate]
-    B -->|Decision needed| D[Prepare concrete decision]
-    D --> B
-    C --> E[Independent review]
-    E -->|Changes needed| C
-    E -->|Pass| F{Delivery gates satisfied?}
-    F -->|Yes| G[Deliver and verify]
-    F -->|Blocked| H[Record handoff]
-    G --> I{Acceptance complete?}
-    I -->|Yes| J[Close and hand off]
-    I -->|No| H
-```
+| Stage | Result needed to move forward |
+| --- | --- |
+| Select and brief | A bounded outcome, scope, dependencies, and acceptance criteria |
+| Establish authority and ownership | Valid permission for the next action and an effective work claim |
+| Implement and validate | A concrete candidate and meaningful evidence |
+| Review | The applicable independent review; corrections return to implementation |
+| Deliver and verify | Authorized delivery of the reviewed candidate and the required acceptance checks |
+| Close and hand off | Verified outcome, remaining findings, released or transferred ownership, and a clear next action |
 
-The diagram summarizes the method. The [review policy](docs/review-protocol.md) defines proportionate review and the additional final verifier for high-impact changes. A review verdict and permission to act are separate records. Existing authorization remains valid within its scope; routine covered steps do not need repeated confirmation.
+If a required decision or dependency is missing, record the current handoff and continue independent authorized work. The [review policy](docs/review-protocol.md) defines proportionate review and the additional final verifier for high-impact changes. A review verdict and permission to act are separate records. Existing authorization remains valid within its scope; routine covered steps do not need repeated confirmation.
 
 ## What belongs where
 

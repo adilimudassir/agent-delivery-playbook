@@ -8,7 +8,7 @@ This is the only place for project-specific working settings. Replace these star
 | --- | --- |
 | Project | Agent Delivery Playbook; replace when adopting |
 | Purpose | Reusable instructions and templates for accountable project delivery |
-| Stack | Markdown, Mermaid, GitHub issue-form YAML |
+| Stack | Markdown and GitHub issue-form YAML |
 | Maintainer / decision authority | Repository owner or their explicitly designated delegate |
 | Timezone | UTC for durable records; include an explicit timezone in scheduled actions |
 | Allowed scope | The selected task's named files and effects |
@@ -20,7 +20,7 @@ This is the only place for project-specific working settings. Replace these star
 | Activity | This repository | Configure for an adopting project |
 | --- | --- | --- |
 | Setup | No application installation required | Exact setup command and prerequisites |
-| Validation | Check relative links, Markdown/Mermaid rendering, YAML syntax, and cross-document consistency | Exact commands, expected results, meaningful tests |
+| Validation | Check relative links, Markdown rendering, YAML syntax, and cross-document consistency | Exact commands, expected results, meaningful tests |
 | Build | Not applicable: documentation/template repository | Build command and artifacts |
 | Run | Not applicable | Development entrypoint |
 | Delivery | Reviewed repository publication | Push/merge/workflow effects and release steps |

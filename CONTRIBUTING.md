@@ -4,7 +4,7 @@ Propose improvements that make tasks easier to select, execute, verify, and resu
 
 Read AGENTS.md and PROJECT.md. Describe the concrete problem and intended outcome, use the task request form when useful, and make a focused change. Preserve public-safe, fictional examples and avoid vendor-specific requirements in the core.
 
-Validate relative links, Markdown/Mermaid rendering, issue-form YAML, and consistency between the method and templates. For a policy change, reason through an ordinary code change, a paused task, a changed review candidate, and an external operation with incomplete verification. Record the actual checks and limitations in the PR.
+Validate relative links, Markdown and any diagram rendering, issue-form YAML, and consistency between the method and templates. For a policy change, reason through an ordinary code change, a paused task, a changed review candidate, and an external operation with incomplete verification. Record the actual checks and limitations in the PR.
 
 Changes to authorization, review requirements, lifecycle semantics, or delivery controls use high-tier review. Editorial changes that do not alter meaning may use light review. Do not claim that written rules configure enforcement or that a role label establishes independence.
 
